@@ -1,0 +1,8 @@
+<h1>Sprawdz przesyłkę!</h1>
+<br/>
+<%= form_tag(check_path) do %>
+<%= label_tag "number", "Numer przesyłki"%>
+<%= text_field_tag :number %>
+<br/>
+<%= submit_tag "Sprawdź!" %>
+<% end %>
