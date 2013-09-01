@@ -1,5 +1,4 @@
 Checker::Application.routes.draw do
-  #get "home/index"
 	post "check" => "home#check"
 
 #	match :controller=>:home, :action=>:check, :as=>"check_engine", :via=>[:post]

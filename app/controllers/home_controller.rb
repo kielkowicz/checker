@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
 	require_dependency "tracker/tracker.rb"
   
+  #Just to serve fromt page
 	def index
   end
 
