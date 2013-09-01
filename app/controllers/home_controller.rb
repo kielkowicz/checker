@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-	require_dependency "tracker.rb"
+	require_dependency "tracker/tracker.rb"
   
 	def index
   end
