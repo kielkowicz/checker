@@ -1,8 +1,10 @@
-<h1>Sprawdz przesyłkę!</h1>
+<h1>Sprawdz stan swojej przesyłki!</h1>
 <br/>
-<%= form_tag(check_path) do %>
-<%= label_tag "number", "Numer przesyłki"%>
-<%= text_field_tag :number %>
+<%= form_tag(check_path,:role=>"form") do %>
+<%= label_tag "number", "Wpisz numer przewozowy przesyłki", :class=>"label-number"%>
+			<%= text_field_tag :number, nil, :class=>"text-field-tag text-center form-control", :placeholder=>"Numer przewozowy przesyłki" %>
 <br/>
-<%= submit_tag "Sprawdź!" %>
+<p class="text-center">
+	<%= submit_tag "Sprawdź!", :class => "btn btn-primary btn-lg" %>
+</p>
 <% end %>

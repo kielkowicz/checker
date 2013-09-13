@@ -7,8 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<br/>
+<div class="container">
+	<div class="header">
+		<ul class="nav nav-pills pull-right">
+			<li><%= link_to 'Stron główna', root_path, :class=>"nav" %></li>
+			<li><%= link_to 'O projekcie', '#' , :class=>"nav" %> </li>
+			<li><%= link_to 'Kontakt', '#', :class=>"nav" %></li>
+		</ul>
+	<br/>
+	<br/>
+	</div>
+	<%= yield %>
+	<div class="footer navbar navbar-fixed-bottom">
+	</div>
+</div>
 </body>
 </html>

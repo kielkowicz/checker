@@ -1,1 +1,23 @@
-<h1><%= "checking for package  #{@number}...".html_safe %></h1>
+<br/>
+<% if @package.in_system?  %>
+<table class="table" >
+	<tr>
+	 	<td><strong>Przesyłka nadana w</strong></td>	
+		<td> <%= @package.from.nil? || @package.from == ", "  ? "brak danych": @package.from %> </td>
+	</tr>
+	<tr>
+	 	<td><strong>Przesyła przeznaczona do</strong></td>	
+		<td><%= @package.to.nil? ? "brak danych": @package.to %> </td>
+	</tr>
+	<tr>
+	 	<td><strong>Typ rzesyłki</strong></td>	
+		<td><%= @package.rodzaj_przesylki.nil? ? "brak danych": @package.rodzaj_przesylki %> </td>
+	</tr>
+	<tr>
+	 	<td><strong>Data nadania przesyłki</strong></td>	
+		<td><%= @package.data_nadania.nil? ? "brak danych": @package.data_nadania %> </td>
+	</tr>
+</table>
+<% else %>
+	Brak informacji o przesylce.
+<% end %>
