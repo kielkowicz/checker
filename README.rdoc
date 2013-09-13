@@ -1,28 +1,13 @@
-== README
+== Checker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails 4.0 application for checking status of your letters.
 
-Things you may want to cover:
+Application is intended to be carrier independent and be able to retrive information from most carrier.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+At the time being application is using only PocztaPolska SOAP services to determinate information about yours letters. All you need to know is the transit number.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+= To be added (someday)
+* DHL carrir class implementation
+* DHL package class
+
